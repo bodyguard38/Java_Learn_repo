@@ -30,18 +30,22 @@ public class Task15 {
     private static void biletAlimMenusu() {
         System.out.println("Nereye gitmek istiyorsunuz?");
         String sehir = input.nextLine();
+        System.out.println("hata burda mi");
         switch (sehir) {
             case    "B":
-            case    "b":
+
                     biletUcretiB();
+                System.out.println("yoksa");
                 break;
             case    "C":
-            case    "c":
+
                     biletUcretiC();
+                System.out.println("neresi");
                 break;
             case    "D":
-            case    "d":
+
                     biletUcretiD();
+                System.out.println("burdaamiyiz");
                 break;
         default:
             System.out.println("Lutfen belirtilen bir deger giriniz..");
@@ -52,18 +56,76 @@ public class Task15 {
 
     private static void biletUcretiD() {
         double ucretD=0.10*900;
-        System.out.println(ucretD);
+        yasHesaplaD(ucretD);
+    }
+
+    private static void yasHesaplaD(Double ucretD) {
+        System.out.println("Lutfen yasinizi giriniz :");
+        int yas = input.nextInt();
+        if (yas>0&&yas<=12) {
+            ucretD=ucretD*0.50;
+        }else if (yas>12&&yas<=24) {
+            ucretD=ucretD*0.90;
+        } else if (yas>65) {
+            ucretD=ucretD*0.70;
+        }
+        System.out.println("Cift yonlu bilet istiyor musunuz?\nEvet icin ->1 \nHayır icin ->2");
+        int yolcu = input.nextInt();
+        if (yolcu==1) {
+            ucretD=(ucretD*0.20)*2;
+        }else if (yolcu==2) {
+            System.out.println(ucretD);
+        }
     }
 
 
     private static void biletUcretiC() {
         double ucretC =0.10*700;
-        System.out.println(ucretC);
+        yasHesaplaC(ucretC);
     }
+
+    private static void yasHesaplaC(Double ucretC) {
+        System.out.println("Lutfen yasinizi giriniz :");
+        int yas = input.nextInt();
+        if (yas>0&&yas<=12) {
+            ucretC=ucretC*0.50;
+        }else if (yas>12&&yas<=24) {
+            ucretC=ucretC*0.90;
+        } else if (yas>65) {
+            ucretC=ucretC*0.70;
+        }
+        System.out.println("Cift yonlu bilet istiyor musunuz?\nEvet icin ->1 \nHayır icin ->2");
+        int yolcu = input.nextInt();
+        if (yolcu==1) {
+            ucretC=(ucretC*0.20)*2;
+        }else if (yolcu==2) {
+            System.out.println(ucretC);
+        }
+    }
+
 
     private static void biletUcretiB() {
       double  ucretB=0.10*500;
-        System.out.println(ucretB);
+        yasaGoreHesapla(ucretB);
+    }
+
+    private static void yasaGoreHesapla(double ucretB) {
+        System.out.println("Lutfen yasinizi giriniz :");
+        int yas = input.nextInt();
+        if (yas>0&&yas<=12) {
+            ucretB=ucretB*0.50;
+        }else if (yas>12&&yas<=24) {
+            ucretB=ucretB*0.90;
+        } else if (yas>65) {
+            ucretB=ucretB*0.70;
+        }
+        System.out.println("Cift yonlu bilet istiyor musunuz?\nEvet icin ->1 \nHayır icin ->2");
+        int yolcu = input.nextInt();
+        if (yolcu==1) {
+            ucretB=(ucretB*0.20)*2;
+        }else if (yolcu==2) {
+            System.out.println(ucretB);
+        }
     }
 
     private static void ucusMenu() {
