@@ -11,21 +11,17 @@ public class Task_05 {
          -5 + 6 + 8 + 12 + 14 - 19 = 16
         Toplamlarını yazdırın.
          */
-
         //Kodu aşağıya yazınız.
-        int toplam = 0;
-        int Array[] = {5, 6, 8, 12, 14, 19};
-        for (int i = 0; i < Array.length; i++) {
-            if (i % 2 == 0) {
-                toplam += Arrays.toString(Array).charAt(i);
-            } else if (i % 2 == 1) {
-
-
-            }
-
-        }
-
-        System.out.println("toplam = " + toplam);
+      int nums[] = {5,6,8,12,14,19};
+      int total = 0;
+      for (int num : nums){
+          if (num % 2 == 0){
+              total+=num;
+          }else{
+              total-=num;
+          }
+      }
+        System.out.println("the total is: "+total);
     }
 }
 

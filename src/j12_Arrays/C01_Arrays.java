@@ -44,7 +44,7 @@ public class C01_Arrays {
         // Array eleman print etme...-> Array doğrudan sout komutu ile print edilirse ref. değerei verir
         //Arrays.toString(array); ile sout edilmeli
 
-        System.out.println("isimArr = " + isimArr);//-> array non-primitive data oldg için stacde referans değer print eder :[Ljava.lang.String;@3d8c7aca
+        System.out.println("isimArr = " + isimArr);//-> array non-primitive data oldugu için stacde referans değer print eder :[Ljava.lang.String;@3d8c7aca
         System.out.println(Arrays.toString(isimArr));//[Yusuf, Murat, Ceren, Vedat, Suzan, son eleman bükücü Abdi]
 
         for (int i = 0; i < isimArr.length; i++) {//bad practice
