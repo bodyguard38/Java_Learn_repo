@@ -9,6 +9,7 @@ public class Task_04 {
          */
 
         // Kodu aşağıya yazınız..
+
         String cityArray[] = {"new jersey","new york","boston","california"};
         System.out.println("CityArray member number  :"+cityArray.length);
 

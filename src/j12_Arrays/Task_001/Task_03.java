@@ -7,7 +7,7 @@ public class Task_03 {
         /*    İnt Array oluştur ve elemanları   : 25,30,30,35,100
           Array in elemanlarının toplamını yazdır.
           Cevap 220 olmalı.
-     */
+        */
 
         //Kodu aşağıya yazınız..
 

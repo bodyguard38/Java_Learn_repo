@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Task_01 {
     public static void main(String[] args) {
- /*
+        /*
         String Array (Dizi) oluşturunuz.
         elemanları : Apple, Orange , Banana, Kiwi
         Array'leri tüm elemanları yazdırınız.
