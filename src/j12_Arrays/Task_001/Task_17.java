@@ -1,5 +1,7 @@
 package j12_Arrays.Task_001;
 
+import java.util.Arrays;
+
 public class Task_17 {
     public static void main(String[] args) {
          /*
@@ -17,10 +19,11 @@ public class Task_17 {
                     arr[i][j]=6;                }
             }
         }
-        for (int i = 0; i <arr.length ; i++) {
-            for (int j = 0; j <arr[i].length ; j++) {
-                System.out.print(arr[i][j]+" ");
-            }
-        }
+    //    for (int i = 0; i <arr.length ; i++) {
+    //        for (int j = 0; j <arr[i].length ; j++) {
+    //            System.out.print(arr[i][j]+" ");
+    //        }
+    //    }
+        System.out.println(Arrays.deepToString(arr));
     }
 }

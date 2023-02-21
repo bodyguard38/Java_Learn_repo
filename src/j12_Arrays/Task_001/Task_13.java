@@ -1,5 +1,7 @@
 package j12_Arrays.Task_001;
 
+import java.util.Arrays;
+
 public class Task_13 {
     public static void main(String[] args) {
          /*
@@ -15,5 +17,21 @@ public class Task_13 {
        */
 
         // Kodu aşağıya yazınız..
+        int array[] = {1, 0, 0, 1, 0};
+
+        int [] result = new int[array.length];
+        int count = 0;
+
+        for (int i = 0; i < array.length ; i++) {
+            if (array[i]== 0){
+                result[count++]=0;
+            }
+        }
+        for (int i = 0; i < array.length ; i++) {
+            if (array[i]== 1){
+                result[count++]=1;
+            }
+        }
+        System.out.println(Arrays.toString(result));
     }
 }

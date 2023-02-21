@@ -1,5 +1,7 @@
 package j12_Arrays.Task_001;
 
+import java.util.Arrays;
+
 public class Task_20 {
     public static void main(String[] args) {
         /*
@@ -11,5 +13,8 @@ public class Task_20 {
     Sonuç bu şekilde olmalıdır. [1, 4]
       */
         //Kodu aşağıya yazınız..
+        int array[] = {1, 2, 3, 4};
+        int[] newArray = {array[0], array[array.length - 1]};
+        System.out.println("newArray contains  :"+Arrays.toString(newArray));
     }
 }
