@@ -18,5 +18,35 @@ public class Task_12 {
 
         // code start here
 
+        boolean b=true;
+
+  //      int []arr={1,2,3,4};
+  //      for (int i = 0; i <arr.length ; i++) {
+  //          if(arr[i]==1){
+  //              for (int j = 0; j <arr.length ; j++) {
+  //                  if (arr[j]==4){
+  //                      b=false;
+  //                  }
+  //              }
+  //          }
+  //      }
+  //      System.out.println(b);
+
+        int [] arr={1,2,3,4};
+        boolean birVarMi=false;
+        boolean dortVarMi=false;
+
+        for (int i = 0; i < arr.length ; i++) {
+            if (arr[i]==1){
+                birVarMi=true;
+            }else if (arr[i]==4){
+                dortVarMi=true;
+            }
+        }
+        if (dortVarMi==true && birVarMi==true){
+            System.out.println(false);
+        }else {
+            System.out.println(true);
+        }
     }
 }

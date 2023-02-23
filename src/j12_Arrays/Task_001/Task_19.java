@@ -23,15 +23,12 @@ public class Task_19 {
                 if (states[i][j].equals("ohio")){
                     states[i][j] = "Florida";
                 }
-            }
-        }
-
-        for (int i = 0; i < states.length ; i++) {
-            for (int j = 0; j <states[i].length ; j++) {
                 System.out.print(states[i][j]+" ");
             }
 
         }
-        System.out.println();
+
+
+
     }
 }
