@@ -8,15 +8,19 @@ public class Task_06 {
         // Task-> verilen bir int arrayi elemanlarını
         // buyukten kucuge siralayip return eden METHOD create ediniz
         int[] arr ={1,5,7,6,9,5,7};
-        sirala(arr);
-        for (int i = arr.length-1; i >=0 ; i--) {
-            System.out.print(arr[i]+" ");
-        } // diziyi tersten print eder
-
+        int [] sortedArr = sortDescending(arr);
+        System.out.println(Arrays.toString(sortedArr));
     }
-    private static int[] sirala(int[] arr) {
-        Arrays.sort(arr);
-        return arr;
 
+    public static int[] sortDescending(int[] arr) {
+        int len = arr.length;
+        int[] sortedArr = new int[len];
+        System.arraycopy(arr, 0, sortedArr, 0, len);
+        Arrays.sort(sortedArr);
+        int[] descendingArr = new int[len];
+        for (int i = 0; i < len; i++) {
+            descendingArr[i] = sortedArr[len - i - 1];
+        }
+        return descendingArr;
     }
 }
