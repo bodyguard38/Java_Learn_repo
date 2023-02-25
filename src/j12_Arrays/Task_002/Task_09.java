@@ -14,6 +14,7 @@ public class Task_09 {
 
         Scanner scan = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
+            System.out.print("Please enter the number of the array  :");
             arr[i]=scan.nextInt();
         }
 

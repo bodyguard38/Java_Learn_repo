@@ -21,7 +21,7 @@ public class Task_21 {
             dizininSonu+=String.valueOf(arr[i]);
         }
         if (dizininBasi.equals(dizininSonu)) {
-            System.out.println("ayna dizisidir");
+            System.out.println("ayna dizidir");
         } else {
             System.out.println("ayna dizisi değildir");
         }

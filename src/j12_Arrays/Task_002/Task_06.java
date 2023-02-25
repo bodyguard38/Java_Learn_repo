@@ -7,6 +7,7 @@ public class Task_06 {
 
         // Task-> verilen bir int arrayi elemanlarını
         // buyukten kucuge siralayip return eden METHOD create ediniz
+
         int[] arr ={1,5,7,6,9,5,7};
         int [] sortedArr = sortDescending(arr);
         System.out.println(Arrays.toString(sortedArr));

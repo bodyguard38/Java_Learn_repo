@@ -13,5 +13,19 @@ public class Task_14 {
                     --> Integer.valueOf()
          */
 
+        String str = "ade1r4d3";
+
+        rakamlarToplami(str);
+    }
+
+    private static void rakamlarToplami(String str) {
+      int sum = 0;
+        for (int i = 0; i <str.length() ; i++) {
+            char ch = str.charAt(i);
+            if (Character.isDigit(ch)) {
+                sum += Character.getNumericValue(ch);
+            }
+        }
+        System.out.println("Sum of digit in  is  :" +sum);
     }
 }

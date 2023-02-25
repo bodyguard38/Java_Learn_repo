@@ -11,7 +11,7 @@ public class Task_08 {
 
         Scanner scan = new Scanner(System.in);
         // kullanıcıdan elemanları al
-        System.out.println("dizinin elemanlarını giriniz");
+        System.out.print("dizinin elemanlarını giriniz  :");
         for (int i = 0; i < 7; i++) {
             arr[i]= scan.nextInt();
         }
