@@ -21,17 +21,14 @@ public class Task02 {
          */
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("kg olarak vucut agirliginiz = ");
+        System.out.print("Vucut agirliginizi kg olarak giriniz : ");
+        double kg = scan.nextInt();
 
-        double agirlik = scan.nextDouble();
-        System.out.print("cm olarak boy uzunlugunuz = ");
+        System.out.print("Lutfen boyunu cm olarak giriniz : ");
+        double boy = scan.nextDouble();
 
-        double uzunluk = scan.nextDouble();
-
-        uzunluk = uzunluk / 100;  //uzunluk/=100
-
-        double vke = agirlik / (uzunluk * uzunluk);
-
-        System.out.println("vucut kitle indeksi (VKI)= " + vke);
+        Double vke = (kg / (boy * boy))*10000;
+        vke = Math.floor(vke);
+        System.out.println("Vke endeksiniz  :"+vke);
     }
 }
