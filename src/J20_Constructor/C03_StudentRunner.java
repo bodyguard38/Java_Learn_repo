@@ -26,5 +26,6 @@ public class C03_StudentRunner {
         ogrc2.sosyalFaaliyet();
         System.out.println(ogrc2);
 
+
     }
 }
