@@ -23,5 +23,29 @@ public class _04_arraylist4 {
     public static void main(String[] args) {
 
 
+        changeInArraylist();
+
+
+
+    }
+
+    private static void changeInArraylist() {
+        ArrayList<String> renkList = new ArrayList<>();
+
+        renkList.add("yellow");
+        renkList.add("red");
+        renkList.add("blue");
+        renkList.add("red");
+        renkList.add("blue");
+        System.out.println("renkList = " + renkList);
+        String s1 = "blue";
+        String s2 = "yellow";
+
+        for (int i = 0; i < renkList.size() ; i++) {
+            if(renkList.get(i).equals(s1)){
+                renkList.set(i, s2);
+            }
+        }
+        System.out.println("renkList = " + renkList);
     }
 }
