@@ -45,6 +45,8 @@ public class Task01_Market {
 
     }
 
+    
+
 
     private static void getOrtalamaKazanc(ArrayList<Integer> gunlukKazanclar) {
         int sum = 0;
