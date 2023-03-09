@@ -17,31 +17,24 @@ public class _06_arraylist6 {
      */
 
     public static void main(String[] args) {
-        ArrayList<Integer> arrList = new ArrayList<Integer>();
-        arrList.add(5);
-        arrList.add(4);
-        arrList.add(6);
-        arrList.add(2);
-        arrList.add(1);
 
-        int hillNum=hillNum(arrList);
-        System.out.println("Hill number: " + hillNum);
+        ArrayList<Integer> arrList = new ArrayList<Integer>(Arrays.asList(5,4,6,2,1));
+
+        hillNum(arrList);
+        System.out.println(hillNum(arrList));
+
     }
 
     private static int hillNum(ArrayList<Integer> arrList) {
-        int prev = arrList.get(0);
+        int sayi = 0; //return etmek icin kullanilacak bulunan elemanlari bu listenin icine atacagiz
 
         for (int i = 1; i < arrList.size()-1 ; i++) {
-            int curr = arrList.get(i);
-            int next = arrList.get(i+1);
-            if (curr < prev && prev>next) {
-
-                System.out.println(curr + " is less than " + prev + " and greater than " + next);
-                return curr;
+            if(arrList.get(i) <arrList.get(i-1) && arrList.get(i) >arrList.get(i+1)) {
+                sayi+=arrList.get(i);
             }
-            prev = curr;
         }
+        return sayi;
 
-        return -1;
+
     }
 }
