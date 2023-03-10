@@ -6,12 +6,13 @@ import java.util.Scanner;
 
 public class Task01_Market {
     static Scanner sc = new Scanner(System.in);
+
     /* TASK :
       * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
       * Ayrıca bakkalın bu hafta ortalama kazandığı miktarı gösteren bir method yazınız.
       * Ayrıca bakkalın hangi günler ortalamanın üstüne kazandığını gösteren bir method yazınız.
       * Ayrıca bakkalın hangi günler ortalamanın altında kazandığını gösteren bir method yazınız.
- ​
+
       * 1. Adım : Günleri içeren bir tane ArrayList oluşturun. (gunler)
       * 2. Adım : Günlük kazançları ekleyeceğimiz bir tane ArrayList oluşturun. (gunlukKazanclar)
       * 3. Adım : While döngüsü ile kullanıcıdan 7 günlük kazançları tekek teker alıp gunlukKazanclar ArrayList'e ekle.
@@ -23,6 +24,7 @@ public class Task01_Market {
       * 			 for döngüsü ile tüm günleri ortalama kazanç ile karşılaştır
       * 			 ortalama kazançtan aşağıysa o günleri return yap.
       * */
+
     static ArrayList<String> gunler = new ArrayList<>(Arrays.asList("p.tesi", "salı", "carşamba", "perşembe", "cuma", "c.tesi", "pazar"));
     // 1. adım
     static ArrayList<Integer> gunlukKazanclar= new ArrayList<>();
