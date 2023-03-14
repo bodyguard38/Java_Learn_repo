@@ -2,6 +2,7 @@ package J13_ArrayList.Task;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -23,8 +24,10 @@ public class Task07 {
 
         System.out.print("Original List : " );
         printArr(isimler);
-        isimler[7]=isimler[2];
+
+        String temp=isimler[2];
         isimler[2]=isimler[7];
+        isimler[7]=temp;
 
         System.out.print("Update list : ");
         printArr(isimler);
