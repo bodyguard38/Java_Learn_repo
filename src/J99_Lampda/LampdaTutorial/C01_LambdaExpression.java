@@ -6,43 +6,43 @@ import java.util.List;
 
 public class C01_LambdaExpression {
     /*
-	 	1) Lambda "Functional Programming"-->mathod(action) kullanan pr dili.
-	 	   Lambda --> mathod create  etme değil mevcut method'ları(library)secip kullanmaktır...
-	       Lambda  kendi başına tanımlanabilen parametre alıp gönderebilen fonksiyonlardır.
-	 	   Lambda’lar sayesinde daha az kod ve hızlı geliştirme sağlanabilmektedir.
-	   	   Java 8 ile gelen bu özellik, Java 8’in en önemli özelliğidir.
+          1) Lambda "Functional Programming"-->mathod(action) kullanan pr dili.
+             Lambda --> mathod create  etme değil mevcut method'ları(library)secip kullanmaktır...
+            Lambda  kendi başına tanımlanabilen parametre alıp gönderebilen fonksiyonlardır.
+             Lambda’lar sayesinde daha az kod ve hızlı geliştirme sağlanabilmektedir.
+               Java 8 ile gelen bu özellik, Java 8’in en önemli özelliğidir.
 
-	 		"Functional Programming" de "Nasil yaparim?" degil "Ne yaparim?" dusunulur.
-	 	2) "Structured Programming" de "Ne yaparim?" dan cok "Nasil Yaparim?" dusunulur
-	 	3) "Functional Programming" hiz, code kisaligi, code okunabilirligi
-	     	ve hatasiz code yazma acilarindan cok avantajlıdır(Çoooğ iyi ...  :) ).
-	 	4) Lambda sadece collections'larda(List, Queue ve Set) ve Array'lerde kullanilabilir ancak map'lerde kullanılmaz.
-           Lambda kullanmak hatasız code kullanmaktır.
+              "Functional Programming" de "Nasil yaparim?" degil "Ne yaparim?" dusunulur.
+          2) "Structured Programming" de "Ne yaparim?" dan cok "Nasil Yaparim?" dusunulur
+          3) "Functional Programming" hiz, code kisaligi, code okunabilirligi
+              ve hatasiz code yazma acilarindan cok avantajlıdır(Çoooğ iyi ...  :) ).
+          4) Lambda sadece collections'larda(List, Queue ve Set) ve Array'lerde kullanilabilir ancak map'lerde kullanılmaz.
+            Lambda kullanmak hatasız code kullanmaktır.
 
-                "Functional Programming"--> CINCIX Programming
-                "Structured Programming"--> AMELE Programming
+                 "Functional Programming"--> CINCIX Programming
+                 "Structured Programming"--> AMELE Programming
 
-            Collections Nedir?
-            Çoğu yazılım tek tek öğeler yerine öğelerden oluşan toplulukları depolar ve onlar üzerinde işlem
-            yapar. Array’ler onlardan birisidir. Java Collections Framework, arraylerle yapılan işleri daha kolay
-            yaptığı gibi, daha fazlasını da yapar.
-            Java’da bir koleksiyon (collection - bazen container, ambar diye adlandırılır) nesnelerden oluşan bir
-            topluluğu bir arada tutan bir yapıdır. ‘Collections Framework’ ise arayüzler ve onların kurgularından
-            (implementations) oluşur.
+             Collections Nedir?
+             Çoğu yazılım tek tek öğeler yerine öğelerden oluşan toplulukları depolar ve onlar üzerinde işlem
+             yapar. Array’ler onlardan birisidir. Java Collections Framework, arraylerle yapılan işleri daha kolay
+             yaptığı gibi, daha fazlasını da yapar.
+             Java’da bir koleksiyon (collection - bazen container, ambar diye adlandırılır) nesnelerden oluşan bir
+             topluluğu bir arada tutan bir yapıdır. ‘Collections Framework’ ise arayüzler ve onların kurgularından
+             (implementations) oluşur.
 
-             API:Uygulama programlama arayüzü
-             (İngilizce: Application Programming Interface, kısaca API), bir yazılımın başka bir yazılımda tanımlanmış işlevlerini
-             kullanabilmesi için oluşturulmuş bir tanım bütünüdür.
-             API, yazılım bileşeniyle olan etkileşimlerin bir özelliğidir.
-             Bu da örnek olarak şu anlama gelir. Bir arabanın bir yazılımı olduğunu hayal edin.
-             Bu arabanın API'si arabanın neler yapabileceği hakkında bilgi içerir; hızlanma, frenleme, camları açma, vs.
-             Ayrıca bunların nasıl yapabileceğine dair bilgiler de içerir.
-             Örneğin hızlanmak için ayağınızı gaz pedalına koyup itersiniz.
-             API, ayağınızı gaza bastığınızda motorun içinde neler olduğunu açıklamak zorunda değildir.
-             Bu nedenle, içten yanmalı motorlu bir araba kullanmayı öğrendiyseniz, tamamen
-             yeni bir dizi beceri öğrenmek zorunda kalmadan API sayesinde elektrikli bir arabayı rahatlıkla kullanabilirsiniz.
+              API:Uygulama programlama arayüzü
+              (İngilizce: Application Programming Interface, kısaca API), bir yazılımın başka bir yazılımda tanımlanmış işlevlerini
+              kullanabilmesi için oluşturulmuş bir tanım bütünüdür.
+              API, yazılım bileşeniyle olan etkileşimlerin bir özelliğidir.
+              Bu da örnek olarak şu anlama gelir. Bir arabanın bir yazılımı olduğunu hayal edin.
+              Bu arabanın API'si arabanın neler yapabileceği hakkında bilgi içerir; hızlanma, frenleme, camları açma, vs.
+              Ayrıca bunların nasıl yapabileceğine dair bilgiler de içerir.
+              Örneğin hızlanmak için ayağınızı gaz pedalına koyup itersiniz.
+              API, ayağınızı gaza bastığınızda motorun içinde neler olduğunu açıklamak zorunda değildir.
+              Bu nedenle, içten yanmalı motorlu bir araba kullanmayı öğrendiyseniz, tamamen
+              yeni bir dizi beceri öğrenmek zorunda kalmadan API sayesinde elektrikli bir arabayı rahatlıkla kullanabilirsiniz.
 
-	 */
+      */
     public static void main(String[] args) {
         List<Integer> sayiList = new ArrayList<>(Arrays.asList(58, 7, 54, 41, 59, 33, 38, 13, 65, 61, 46, 45, 25, 16));
 
@@ -52,12 +52,12 @@ public class C01_LambdaExpression {
         printElfunctional(sayiList);//58 7 54 41 59 33 38 13 65 61 46 45 25 16
         System.out.println("\n   task03   ");
         printElfunctional1(sayiList);
-        System.out.println("\n   task04   ");
+        System.out.println("\n   task03   ");
         printElfunctional2(sayiList);
 
 
     }//main sonu
-    //task 01->  "Structured Programming"--> AMELE Programming kullanara list elemanlarını aynı satırda aralarında bosluk olacak şekilde print ediniz.
+    //task 01->  "Structured Programming"--> AMELE Programming kullanarak list elemanlarını aynı satırda aralarında bosluk olacak şekilde print ediniz.
 
     public static void printElStructred(List<Integer> sayiList) {
         for (Integer avuc : sayiList) {
@@ -69,7 +69,7 @@ public class C01_LambdaExpression {
     public static void printElfunctional(List<Integer> sayiList) {
 
 
-        sayiList.//akısa girecek coll kaynagı call edildi
+        sayiList.//aksiyona girecek list collection
                 stream().//coll dan gelen elemanlar akısa alındı
                 forEach((t) -> System.out.print(t + " "));//akısdaki herbir eleman t'ye atandı ve herbir t elemanı sout meth call etti
 
@@ -100,28 +100,29 @@ public class C01_LambdaExpression {
 
         sayiList.//akısa girecek coll kaynagı call edildi
                 stream().//coll dan gelen elemanlar akısa alındı
-                forEach(System.out::print);//akısdaki herbir elemanprint meth refere ediler yazdırlıldı.
-
+                forEach(System.out::print);//akısdaki herbir eleman print meth refere ediler yazdırlıldı.
+        // methodReference -> MethodKaynagı :: method
     }
     public static void printElfunctional2(List<Integer> sayiList) {
 
 
-        sayiList.//akısa girecek coll kaynagı call edildi
+        sayiList.//aksiyona girecek list collection
                 stream().//coll dan gelen elemanlar akısa alındı
-                forEach(C01_LambdaExpression::yazdir);//akısdaki herbir elemanprint meth refere ediler yazdırlıldı.
-        //methodReference ->Method kaynagi
+                forEach(C01_LambdaExpression::yazdirInt);//akısdaki herbir elemanprint meth refere ediler yazdırlıldı.
+
     }
-    public static void yazdir(int a){//normal Allah'ın  methodu-> int olan parametreyi yan yana boslukla print ediyor
-        //seed ->tohum çekirdek method:refere edilecek meth
+    public static void yazdirInt(int a){//normal Allah'ın  methodu-> int olan parametreyi yan yana boslukla print ediyor
+        //seed ->tohum çekirdek method:refere edilecek meth.
 
         System.out.print(a+" ");
     }
-
-    public static boolean ciftMi(int x){
+    public static boolean ciftMi(int x){//normal Allah'ın  methodu-> int olan parametreyi cift olmasını kontrol eder
+        //seed ->tohum çekirdek method:refere edilecek meth.
         return x%2==0;
     }
+    public static void yazdirStrt(String  a){//normal Allah'ın  methodu-> int olan parametreyi yan yana boslukla print ediyor
+        //seed ->tohum çekirdek method:refere edilecek meth.
 
-    public static boolean tekMi(int y) {
-        return y%2==1;
+        System.out.print(a+" ");
     }
 }
