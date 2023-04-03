@@ -29,7 +29,7 @@ public class C05_Sorted {
                 .filter(C01_LambdaExpression::ciftMi) //akışdaki list çift elelmanları filtrelendi
                 .map(t -> t * t)//alışdaki filtrelene çift elemanlar karesine update edildi
                 .sorted()//akışdaki karesine update edilen çift elemanlar naturel order yapıldı
-                .forEach(C01_LambdaExpression::yazdir);
+                .forEach(C01_LambdaExpression::yazdirInt);
          /*
          sorted() -> akışdaki elemanları naturel order (doğal sıra) halinde akış return eder
          sorted() tekrarlı kullanılırsa son return aktif olur...
@@ -44,7 +44,7 @@ public class C05_Sorted {
                 .filter(t->t%2==1)
                 .map(t->t*t)
                 .sorted(Comparator.reverseOrder())//akışdaki elemanlar parametre-> tersSıra ile sıralandı
-                .forEach(C01_LambdaExpression::yazdir);
+                .forEach(C01_LambdaExpression::yazdirInt);
     }
 
 }

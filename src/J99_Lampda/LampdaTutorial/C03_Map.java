@@ -30,7 +30,7 @@ public class C03_Map {
                 // .map(t->t*t) // çift sarta fitrelene list elemanları karesine update (maping) edildi
                 //.map(t->(int)Math.pow(t,2)) // çift sarta fitrelene list elemanları karesine update (maping) edildi
                 .map(C03_Map::kareAl) // çift sarta fitrelene list elemanları karesine update (maping) edildi
-                .forEach(C01_LambdaExpression::yazdir); // akısdaki maping(update) elemanların herbiri prşnt edildi
+                .forEach(C01_LambdaExpression::yazdirInt); // akısdaki maping(update) elemanların herbiri prşnt edildi
 
         //map()--> Stream içerisindeki elemanları başka tiplere dönüştürmek veya üzerlerinde işlem yapmak (update) için map kullanılmaktadır.
 
@@ -49,7 +49,7 @@ public class C03_Map {
                 .filter(t -> t % 2 == 1)//akısdaki list elemanları tek sarta göre filtrelendi
                 // .map(t->t*t*t+1) // çift sarta fitrelene list elemanları karesine update (maping) edildi
                 .map(t -> (int) Math.pow(t, 3) + 1) // tek sarta fitrelene list elemanları kup fazlasına update (maping) edildi
-                .forEach(C01_LambdaExpression::yazdir); // akısdaki maping(update) elemanların herbiri prşnt edildi
+                .forEach(C01_LambdaExpression::yazdirInt); // akısdaki maping(update) elemanların herbiri prşnt edildi
 
         //map()--> Stream içerisindeki elemanları başka tiplere dönüştürmek veya üzerlerinde işlem yapmak (update) için map kullanılmaktadır.
 
@@ -62,7 +62,7 @@ public class C03_Map {
                 stream().
                 filter(C01_LambdaExpression::ciftMi).
                 map(t->(int)Math.sqrt(t)).
-                forEach(C01_LambdaExpression::yazdir);
+                forEach(C01_LambdaExpression::yazdirInt);
     }
 
 }
