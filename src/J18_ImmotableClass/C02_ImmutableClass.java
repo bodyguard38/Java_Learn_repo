@@ -12,9 +12,9 @@ public class C02_ImmutableClass {
 
         String name="Aydin";
         System.out.println("******Immutable class******");
-        System.out.println("method oncesi name  :"+name);
+        System.out.println("method oncesi name  :"+name);//Aydin
         name.concat(" QA team leader");
-        System.out.println("method sonrasi name  :"+name);//string immutable class oldugu icin ayni degeri korur.
+        System.out.println("method sonrasi name  :"+name);//Aydin  (string immutable class oldugu icin ayni degeri korur.)
 
         System.out.println("******mutable class******");
         ArrayList<String> isimList=new ArrayList<>();
@@ -24,6 +24,15 @@ public class C02_ImmutableClass {
         isimList.add("Ceren");
         isimList.add("Tugba");
         System.out.println("isimList :  "+isimList);//list mutable class oldugu icin method call sonrasi degisti.
+
+        /*Java’da immutable sınıf nasıl oluşturulur?
+        Sınıfı, final anahtarı ile işaretleyin, böylece extend (kalıtım) edemezsiniz.
+        Sınıfın tüm alanlarını private yapın, böylece doğrudan erişime izin vermezsiniz.
+        Değişkenler için setter metodu koymayın.
+        Tüm değiştirilebilen alanları final yapın, böylece yalnızca bir kez atanabilir.
+        Tüm alanlara, constructor aracılığıyla ilk değerlerini atayın.
+        Değiştirebilir olan tüm alanların dışarıya nesnelerin klonlanarak dönmesini gerçekleştirin.
+        */
 
     }
 }

@@ -17,5 +17,7 @@ public class C01_ImmotableClass {
         System.out.println("str1.equals(str5) = " + str1.equals(str5));// T
         System.out.println("\"haluk\" = " + "haluk");
 
+        System.out.println(str3.equals(str4));//T
+
     }
 }
